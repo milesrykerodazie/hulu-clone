@@ -1,0 +1,12 @@
+.results > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* @media only screen and (max-width: 780px) {
+  .results > div {
+    justify-content: flex-start !important;
+    width: 100vw !important;
+  }
+} */

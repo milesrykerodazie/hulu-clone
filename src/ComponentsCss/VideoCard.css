@@ -1,0 +1,58 @@
+.videoCard {
+  color: white;
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  transition: transform 100ms ease-out;
+}
+@media only screen and (max-width: 750px) {
+  .videoCard {
+    transition: none !important;
+    width: 300px !important;
+    padding: 10px !important;
+  }
+  .videoCard:hover {
+    transform: none !important;
+  }
+  .videoCard__stats {
+    display: inline !important;
+  }
+  .videoCard > img {
+    height: 200px !important;
+    width: 300px !important;
+    object-fit: contain;
+  }
+}
+.videoCard > h2 {
+  font-size: 22px;
+}
+.videoCard:hover {
+  transform: scale(1.09);
+}
+
+.videoCard > img {
+  height: 300px;
+  object-fit: contain;
+  width: 500px;
+}
+.videoCard > h4 {
+  margin-top: -7px;
+  margin-bottom: -0.05px;
+}
+.videoCard__stats {
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+.videoCard__stats > .MuiSvgIcon-root {
+  margin-top: 10px;
+  margin-left: 3px;
+  margin-right: 5px;
+}
+.videoCard__stats {
+  display: none;
+}
+.videoCard:hover > .videoCard__stats {
+  display: inline;
+}
